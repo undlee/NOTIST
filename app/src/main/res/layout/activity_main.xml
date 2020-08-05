@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:text="NOTIST"
+        android:fontFamily="@font/nanumsquareroundb"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="185dp"
+            android:fontFamily="@font/nanumsquareroundr"/>
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="185dp"
+            android:fontFamily="@font/nanumsquareroundr" />
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/passwordInput"
+            android:layout_toStartOf="@+id/signupButton"
+            android:layout_toLeftOf="@+id/signupButton"
+            android:layout_weight="5"
+            android:background="@android:drawable/toast_frame"
+            android:backgroundTint="@color/Black"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:text="로그인"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="338dp"
+        android:fontFamily="@font/nanumsquareroundr"
+        android:text="or"
+        android:textAppearance="@style/Theme.AppCompat.Light.Dialog"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_googleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <com.kakao.usermgmt.LoginButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_toStartOf="@+id/searchButton"
+            android:layout_toLeftOf="@+id/searchButton"
+            android:layout_weight="3"
+            android:background="@color/com_kakao_account_button_background"
+            android:text="ID/PW 찾기"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nanumsquareroundr"/>
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@+id/loginButton"
+            android:layout_alignEnd="@+id/passwordInput"
+            android:layout_alignRight="@+id/passwordInput"
+            android:layout_weight="3"
+            android:background="@drawable/kakao_account_button_background"
+            android:text="회원가입"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nanumsquareroundr"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
