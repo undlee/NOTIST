@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "957215482663",
-    "firebase_url": "https://direcord-4a836.firebaseio.com",
-    "project_id": "direcord-4a836",
-    "storage_bucket": "direcord-4a836.appspot.com"
+    "project_number": "834479457088",
+    "firebase_url": "https://direcord-283711.firebaseio.com",
+    "project_id": "direcord-283711",
+    "storage_bucket": "direcord-283711.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:957215482663:android:82cd738933621f0cc87f02",
+        "mobilesdk_app_id": "1:834479457088:android:5ecebf44c1d3f3324070a5",
         "android_client_info": {
           "package_name": "org.techtown.direcord"
         }
       },
       "oauth_client": [
         {
-          "client_id": "957215482663-gp0isvt2ltuci5ffe2lp6bjn1r93l52b.apps.googleusercontent.com",
+          "client_id": "834479457088-bagsim54k9blbl7tldot6h8l27vqjnv5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "org.techtown.direcord",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "957215482663-ujl8nkkf4rcltt3qd5t7o11le9co632v.apps.googleusercontent.com",
+          "client_id": "834479457088-sqi5sas8pohluo7i96h025t46qnfj61e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAajVHDMz9Cz5h98KhOWuSP5Lc2euLMz_I"
+          "current_key": "AIzaSyC6kYcpC11Lq9F6VOyvYcPfTdgQc8mwSpE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "957215482663-ujl8nkkf4rcltt3qd5t7o11le9co632v.apps.googleusercontent.com",
+              "client_id": "834479457088-sqi5sas8pohluo7i96h025t46qnfj61e.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
