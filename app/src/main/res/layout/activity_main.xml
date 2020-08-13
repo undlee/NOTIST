@@ -7,6 +7,26 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nanumsquareround"
+        android:text="NOTIST"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <LinearLayout
         android:layout_width="20dp"
@@ -46,9 +66,11 @@
             android:background="@color/White"
             android:fontFamily="@font/nanumsquareroundr"
             android:inputType="text"
+            android:hint="아이디"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
             android:visibility="visible" />
+
 
         <EditText
             android:id="@+id/passwordInput"
@@ -57,6 +79,7 @@
             android:layout_marginTop="45dp"
             android:background="@color/White"
             android:fontFamily="@font/nanumsquareroundr"
+            android:hint="비밀번호"
             android:inputType="textPassword"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
