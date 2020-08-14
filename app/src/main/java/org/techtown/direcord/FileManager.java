@@ -31,12 +31,12 @@ public class FileManager {
      * @param file
      * @return upload 후에 해당 file의 gcsUri 위치
      */
-    public static String upload(String uid, File file) {
+    public static String upload(File file) {
 
         // Create a storage reference from our app
-        StorageReference rootStorage = FirebaseStorage.getInstance().getReference();
+        StorageReference rootStorage = MainActivity.firebaseStorage.getReference();
 
-        String path = uid + "/" + file.getName();
+        String path = file.getName();
 
         storage = rootStorage.child(path);
 

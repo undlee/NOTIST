@@ -1,102 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:paddingBottom="10dp"
-android:paddingLeft="5dp"
-android:paddingRight="5dp"
-android:paddingTop="10dp"
-android:layout_margin="20dp"
-tools:ignore="ExtraText"
-android:background="#ffffff">
-
-<ImageButton
-    android:layout_width="55.56px"
-    android:layout_height="55.56px"
-    android:layout_alignParentLeft="true"
-    android:layout_marginRight="82px"
-    android:layout_marginTop="51px"
-    android:background="@null"
-    android:src="@drawable/plus_rotate">
-
-</ImageButton>
-
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/nanum_square_regular"
-    android:text="검색"
-    android:textSize="51px"
-    android:layout_marginTop="51px"
-    android:layout_alignParentLeft="true"
-    android:layout_marginRight="420px"
-    android:layout_alignParentRight="true"
-    android:layout_marginLeft="420px"
-    android:textColor="#000000">
-
-</TextView>
-
-<EditText
-    android:id="@+id/editTextFilter"
-    android:layout_marginTop="240px"
-    android:layout_width="1000dp"
-    android:layout_height="136px"
-    android:background="@drawable/rounded_corner_rectangle"
-    android:drawableStart="@drawable/search_icon_last"
-    android:drawableLeft="@drawable/search_icon_last"
-    android:fontFamily="@font/nanum_square_regular"
-    android:hint="  검색어를 입력하세요"
-    android:includeFontPadding="true"
-    android:textColor="#222222"
-    android:textSize="40px" />
-
-//전환버튼
-<ImageButton
-    android:layout_marginTop="20dp"
-    android:id="@+id/textbutton_1"
-    android:layout_width="233px"
-    android:layout_height="79px"
-    android:layout_below="@+id/editTextFilter"
-    android:layout_alignParentLeft="true"
-    android:layout_marginRight="116px"
-    android:background="@null"
-    android:src="@drawable/filename_states">
-</ImageButton>
-
-<ImageButton
-    android:layout_marginTop="20dp"
-    android:id="@+id/textbutton_2"
-    android:layout_width="233px"
-    android:layout_height="79px"
-    android:layout_below="@+id/editTextFilter"
-    android:layout_toRightOf="@+id/textbutton_1"
-    android:background="@null"
-    android:src="@drawable/cate_states"
-    android:layout_marginRight="116px">
-</ImageButton>
-
-<ImageButton
-    android:layout_marginTop="20dp"
-    android:id="@+id/textbutton_3"
-    android:layout_width="233px"
-    android:layout_height="79px"
-    android:layout_below="@+id/editTextFilter"
-    android:layout_toRightOf="@+id/textbutton_2"
-    android:src="@drawable/hash_states"
-    android:background="@null">
-</ImageButton>
-
-
-<ListView
-    android:id="@+id/list_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@id/textbutton_1"
-    android:layout_marginTop="20dp"
-    android:fontFamily="@font/nanum_square_regular"
-    android:textFilterEnabled="true" />
+    android:layout_margin="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    tools:ignore="ExtraText">
+
+    <ImageButton
+        android:layout_width="55.56px"
+        android:layout_height="55.56px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="82px"
+        android:background="@null"
+        android:src="@drawable/plus_rotate">
+
+    </ImageButton>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nanumsquareroundb"
+        android:gravity="center"
+        android:text="검색"
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editTextFilter"
+        android:layout_width="1000dp"
+        android:layout_height="136px"
+        android:layout_marginTop="240px"
+        android:background="@drawable/rounded_corner_rectangle"
+        android:drawableLeft="@drawable/search_icon_last"
+        android:fontFamily="@font/nanum_square_regular"
+        android:hint="  검색어를 입력하세요"
+        android:includeFontPadding="true"
+        android:textColor="#222222"
+        android:textSize="40px" />
+
+    //전환버튼
+
+    <ImageButton
+        android:id="@+id/textbutton_1"
+        android:layout_width="233px"
+        android:layout_height="79px"
+        android:layout_below="@+id/editTextFilter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="116px"
+        android:background="@null"
+        android:src="@drawable/filename_states"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/textbutton_2"
+        android:layout_width="233px"
+        android:layout_height="79px"
+        android:layout_below="@+id/editTextFilter"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="116px"
+        android:layout_toRightOf="@+id/textbutton_1"
+        android:background="@null"
+        android:src="@drawable/cate_states"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/textbutton_3"
+        android:layout_width="233px"
+        android:layout_height="79px"
+        android:layout_below="@+id/editTextFilter"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/textbutton_2"
+        android:background="@null"
+        android:src="@drawable/hash_states"></ImageButton>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textbutton_1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanum_square_regular"
+        android:textFilterEnabled="true" />
 
 </RelativeLayout>

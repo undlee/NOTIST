@@ -4,11 +4,14 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import java.util.Map;
+
 public class FragmentDataSender {
 
-    public static void sendData(String key, String sendData, Fragment fragment){
+    public static void sendData(Map<String, String> sendMap, Fragment fragment){
         Bundle bundle = new Bundle();
-        bundle.putString(key, sendData);
+        for(Map.Entry<String, String> e : sendMap.entrySet())
+             bundle.putString(e.getKey(), e.getValue());
         fragment.setArguments(bundle);
     }
 }

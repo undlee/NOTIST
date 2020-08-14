@@ -10,18 +10,15 @@
 >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="444dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginRight="444dp"
-        android:fontFamily="@font/nanumsquarebold"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsquareroundb"
         android:gravity="center"
-        android:textSize="56px"
-        android:text="기록하기"/>
+        android:text="기록하기"
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
 
     <EditText
         android:id="@+id/edit_filename"
@@ -47,6 +44,7 @@
         android:layout_marginLeft="19dp"
         android:layout_marginTop="169dp"
         android:textSize="56px"
+        android:textColor="@color/Black"
         android:fontFamily="@font/nanumsquareregular"
         android:text="언어설정" />
 
@@ -60,8 +58,11 @@
         android:layout_marginTop="155dp"
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#999999"
         android:textOff="한국어"
         android:textOn="영어"
+        android:textColor="@color/Black"
         android:text="ToggleButton" />
 
     <TextView
@@ -75,6 +76,7 @@
         android:layout_marginLeft="19dp"
         android:layout_marginTop="237dp"
         android:textSize="56px"
+        android:textColor="@color/Black"
         android:fontFamily="@font/nanumsquareregular"
         android:text="인원설정" />
 
@@ -127,6 +129,7 @@
         android:layout_marginBottom="255dp"
         android:fontFamily="@font/nanumsquareregular"
         android:text="카테고리 추가"
+        android:textColor="@color/Black"
         android:textSize="56px" />
 
     <ImageButton
@@ -154,6 +157,7 @@
         android:layout_marginBottom="190dp"
         android:fontFamily="@font/nanumsquareregular"
         android:text="친구 / 그룹 불러오기"
+        android:textColor="@color/Black"
         android:textSize="56px" />
 
     <ImageButton

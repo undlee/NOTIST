@@ -1,17 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="#9C27B0">
+    android:orientation="vertical">
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsquareroundb"
         android:gravity="center"
-        android:text="세팅"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-</LinearLayout>
+        android:text="프로필 수정"
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/passwordImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/nanumsquareroundr"
+        android:gravity="center"
+        android:text="프로필 사진 바꾸기"
+        android:textColor="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_black"
+            android:fontFamily="@font/nanumsquareregular"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:inputType="text"
+            android:visibility="visible"
+            android:text="이메일"
+            android:hint="dlgotj69@gmail.com"
+            android:textColorHint="@color/Black"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_black"
+            android:fontFamily="@font/nanumsquareregular"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="비밀번호"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_black"
+            android:fontFamily="@font/nanumsquareregular"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="이름"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_black"
+            android:fontFamily="@font/nanumsquareregular"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="생년월일"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1617px"
+        android:background="@drawable/makeroom"
+        android:fontFamily="@font/nanumsquarebold"
+        android:text="완료"
+        android:textColor="#ffffff"
+        android:textSize="56px" />
+
+</RelativeLayout>

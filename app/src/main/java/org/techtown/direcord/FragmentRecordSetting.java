@@ -3,11 +3,13 @@ package org.techtown.direcord;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +18,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FragmentRecordSetting extends Fragment {
 
@@ -29,6 +33,8 @@ public class FragmentRecordSetting extends Fragment {
         view = (ViewGroup) inflater.inflate(R.layout.fragment_recordsetting,container,false);
         edit_filename = (EditText) view.findViewById(R.id.edit_filename);
         Button button = (Button) view.findViewById(R.id.makeroom);
+        ToggleButton languageBtn = view.findViewById(R.id.toggleButton);
+        final String lang = languageBtn.getText().toString().equals("영어") ? "en-US" : "ko-KR";
 
         fragmentRecord = new FragmentRecord();
 
@@ -39,7 +45,12 @@ public class FragmentRecordSetting extends Fragment {
 
                 File file = new File(((BottomMainActivity)getActivity()).getFilesDir(), fileName);
                 String path = file.getAbsolutePath();
-                FragmentDataSender.sendData(ResourceConst.FILE_NAME_KEY, path, fragmentRecord);
+                Map<String, String> sendMap = new HashMap<>();
+                sendMap.put(ResourceConst.FILE_NAME_KEY, path);
+                sendMap.put(ResourceConst.LANGUAGE_KEY, lang);
+                FragmentDataSender.sendData(sendMap, fragmentRecord);
+                Log.d("path ", path);
+                Log.d("lang ", lang);
                 permissionCheck();
                 ((BottomMainActivity)getActivity()).replaceFragment(fragmentRecord);
             }

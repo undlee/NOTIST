@@ -17,7 +17,7 @@
         android:layout_height="55.56px"
         android:layout_alignParentLeft="true"
         android:layout_marginRight="82px"
-        android:layout_marginTop="51px"
+        android:layout_marginTop="20dp"
         android:background="@null"
         android:src="@drawable/plus_rotate">
 
@@ -25,19 +25,15 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nanum_square_regular"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsquareroundb"
+        android:gravity="center"
         android:text="검색"
-        android:textSize="51px"
-        android:layout_marginTop="51px"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="420px"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="420px"
-        android:textColor="#000000">
-
-    </TextView>
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
 
     //검색창
     <EditText

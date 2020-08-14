@@ -6,22 +6,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/home_layout">
 
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsquareroundb"
+        android:gravity="center"
+        android:text="NOTIST"
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/search_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="350dp"
+        android:background="@drawable/search_icon_last"/>
+
     <ImageView
         android:id="@+id/passwordImage"
-        android:layout_marginTop="110dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="25dp"
         android:layout_width="70dp"
         android:layout_height="70dp"
         app:srcCompat="@drawable/profile" />
 
     <TextView
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="110dp"
+        android:fontFamily="@font/nanumsquareroundb"
+        android:text="이해서"
+        android:textSize="25dp"
+        android:textColor="@color/Black"/>
+
+    <TextView
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginTop="115dp"
-        android:layout_marginLeft="110dp"
+        android:layout_marginLeft="180dp"
         android:fontFamily="@font/nanumsquareroundr"
-        android:text="ㅇㅇㅇ님 안녕하세요."
-        android:textSize="22dp"
+        android:text="님 안녕하세요."
+        android:textSize="20dp"
         android:textColor="@color/Black">
     </TextView>
     <TextView
@@ -189,7 +218,7 @@
                 android:textSize="40px" />
         </TableRow>
 
-        //두 번째 줄ㄹ
+        //두 번째 줄
         <TableRow
             android:layout_width="1000px"
             android:layout_height="263dp"
@@ -221,6 +250,8 @@
                 android:text="이산수학"
                 android:textColor="#222222"
                 android:textSize="40px" />
+
+
 
         </TableRow>
 

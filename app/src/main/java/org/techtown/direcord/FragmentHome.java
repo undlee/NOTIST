@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class FragmentHome extends Fragment {
+public class FragmentHome extends Fragment{
 
     ViewGroup viewGroup;
     @Nullable
@@ -20,4 +20,13 @@ public class FragmentHome extends Fragment {
         return viewGroup;
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    private void setContentView(int activity_main) {
+
+    }
 }
