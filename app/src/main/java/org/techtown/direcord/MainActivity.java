@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                                    Intent intent = new Intent(MainActivity.this, BottomMainActivity.class);
                                     startActivity(intent);
                                 } else {
                                     Toast.makeText(MainActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                             // 로그인 성공
-                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            Intent intent = new Intent(MainActivity.this, BottomMainActivity.class);
                             startActivity(intent);
                         } else {
                             // 로그인 실패
